@@ -53,20 +53,20 @@ if ($result->num_rows > 0) {
             Seu navegador não suporta o vídeo
         </video>
         <div class="container">
-            <h2>Inscreva-Se!</h2>
+            <h2>Inscreve-te!</h2>
             <form action="index.php" method="get">
                 <div class="team_name name_team">
-                    <label for="Teams">Escolha um nome para sua equipa!</label>
+                    <label for="Teams">Escolhe um nome para a tua equipa!</label>
                     <input type="text" name="TeamName" placeholder="Nome da equipa...." required>
                 </div>
                 
                 <div class="select_team name_team">
                     <div>
-                        <label for="Teams">Selecione o seu time!</label>
+                        <label for="Teams">Seleciona a tua equipa!</label>
                     </div>
                     <div>
                         <select name="Team" id="Teams" required>
-                            <option value="">Escolha um time</option>
+                            <option value="">Escolhe uma equipa</option>
                             <?php
                             // Array de todas as equipes possíveis
                             $all_teams = ["Ajax", "Anderlecht", "Arsenal", "Aston Villa", "Atlético de Madrid", "Benfica", "Borussia Dortmund", 
