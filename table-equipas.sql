@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Nov-2024 às 22:56
+-- Tempo de geração: 07-Nov-2024 às 15:48
 -- Versão do servidor: 10.4.32-MariaDB
 -- versão do PHP: 8.2.12
 
@@ -24,15 +24,15 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `equipas`
+-- Estrutura da tabela `table-equipas`
 --
 
-CREATE TABLE `equipas` (
+CREATE TABLE `table-equipas` (
   `id` int(11) NOT NULL,
   `TN` varchar(255) NOT NULL,
-  `TT` varchar(255) NOT NULL,
-  `TP1` int(11) NOT NULL,
-  `TP2` int(11) NOT NULL
+  `TP1` varchar(255) NOT NULL,
+  `TP2` varchar(255) NOT NULL,
+  `TT` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -40,9 +40,9 @@ CREATE TABLE `equipas` (
 --
 
 --
--- Índices para tabela `equipas`
+-- Índices para tabela `table-equipas`
 --
-ALTER TABLE `equipas`
+ALTER TABLE `table-equipas`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -50,10 +50,10 @@ ALTER TABLE `equipas`
 --
 
 --
--- AUTO_INCREMENT de tabela `equipas`
+-- AUTO_INCREMENT de tabela `table-equipas`
 --
-ALTER TABLE `equipas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `table-equipas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

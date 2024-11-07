@@ -15,19 +15,17 @@ if (isset($_GET["TeamName"]) && isset($_GET["Team"]) && isset($_GET["Player1"]) 
     $player2 = $_GET["Player2"];
 
     // Insere os dados no banco de dados
-    $sql = "INSERT INTO equipas (TN, TT, TP1, TP2) VALUES ('$teamName', '$team', '$player1', '$player2')";
+    $sql = "INSERT INTO `table-equipas` (TN, TT, TP1, TP2) VALUES ('$teamName', '$team', '$player1', '$player2')";
     
-    /*
     if ($conn->query($sql) === TRUE) {
-        echo "Novo registro inserido com sucesso!";
+        //echo "Novo registro inserido com sucesso!";
     } else {
         echo "Erro: " . $sql . "<br>" . $conn->error;
     }
-    */
 }
 
 // Consulta as equipes já selecionadas no banco de dados
-$selected_teams_query = "SELECT TT FROM equipas";
+$selected_teams_query = "SELECT TT FROM `table-equipas`";
 $result = $conn->query($selected_teams_query);
 
 // Cria um array com as equipes selecionadas
